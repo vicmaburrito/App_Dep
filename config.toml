@@ -2,9 +2,32 @@ baseURL = "http://localhost:1313/"
 languageCode = 'en-us'
 title = 'My Portafolio'
 theme = "paper"
+defaultContentLanguage = "es"
 
+# Your Google analytics code.
+googleAnalytics = "UA-41662036-4"
+# Your Disqus sortname.
+disqusShortname = "vicmaburrito"
+
+# Number of posts to show in recent posts list (Optional). Defaults to 10.
+paginate = 5
 
 [params]
+    # show selector to switch language
+    showLanguageSelector = true
+
+    # set theme to full screen width
+    fullWidthTheme = false
+
+    # center theme with default width
+    centerTheme = true
+
+    # set a custom favicon (default is a `themeColor` square)
+    # favicon = "favicon.ico"
+
+    # set all headings to their default size (depending on browser settings)
+    # it's set to `true` by default
+    # oneHeadingSize = false
   disableHLJS = true                         # don't use highlight.js
   twitter = '@ManuelAldaraca'                # twitter.com/YOUR_TWITTER_ID
   github = 'vicmaburrito'                  # github.com/YOUR_GITHUB_ID
@@ -24,3 +47,36 @@ theme = "paper"
   name = "Twitter"
   icon = "twitter"
   url = "https://twitter.com/manuelaldaraca"
+
+# Enable tags.
+[taxonomies]
+   tag = "tags"
+
+   [languages]
+  [languages.es]
+    languageName = "Español"
+    title = "My Portafolio"
+    subtitle = "Building my portafolio"
+    keywords = "Manuel Aldaraca Full-Stack Developer"
+    copyright = ""
+    menuMore = "Mostrar más"
+    readMore = "Leer más"
+    readOtherPosts = "Leer otros posts"
+
+    [languages.es.params.logo]
+      logoText = "WEBartisan"
+      logoHomeLink = "/"
+
+    [languages.es.menu]
+      [[languages.es.menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts"
+      [[languages.es.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+      [[languages.es.menu.main]]
+        identifier = "faq"
+        name = "FAQ"
+        url = "/faq"
