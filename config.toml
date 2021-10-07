@@ -1,5 +1,5 @@
 baseURL = "http://localhost:1313/"
-languageCode = 'en-us'
+languageCode = 'es-ES'
 title = 'My Portafolio'
 theme = "paper"
 defaultContentLanguage = "es"
@@ -11,6 +11,9 @@ disqusShortname = "vicmaburrito"
 
 # Number of posts to show in recent posts list (Optional). Defaults to 10.
 paginate = 5
+
+[build]
+publish = "public"
 
 [params]
     # show selector to switch language
@@ -28,7 +31,9 @@ paginate = 5
     # set all headings to their default size (depending on browser settings)
     # it's set to `true` by default
     # oneHeadingSize = false
-  disableHLJS = true                         # don't use highlight.js
+    pygmentsstyle = "vs"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
   twitter = '@ManuelAldaraca'                # twitter.com/YOUR_TWITTER_ID
   github = 'vicmaburrito'                  # github.com/YOUR_GITHUB_ID
   instagram = 'manuelaldaraca'            # instagram.com/YOUR_INSTAGRAM_ID
