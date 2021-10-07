@@ -4,13 +4,7 @@ title = 'My Portafolio'
 theme = "paper"
 defaultContentLanguage = "es"
 
-# Your Google analytics code.
-googleAnalytics = "UA-41662036-4"
-# Your Disqus sortname.
-disqusShortname = "vicmaburrito"
-
 # Number of posts to show in recent posts list (Optional). Defaults to 10.
-paginate = 5
 
 [build]
 publish = "public"
@@ -69,7 +63,7 @@ pygmentscodefencesguesssyntax = true
     readOtherPosts = "Leer otros posts"
 
     [languages.es.params.logo]
-      logoText = "WEBartisan"
+      logoText = "vicmaburrito"
       logoHomeLink = "/"
 
     [languages.es.menu]
